@@ -1,0 +1,87 @@
+
+settings = {
+    orientation = {
+        default = 'portrait',
+        supported = {'portrait', 'portraitUpsideDown'},
+        
+    },
+	
+	iphone = {
+		plist = {
+			
+            CoronaUseIOS7IPadPhotoPickerLandscapeOnlyWorkaround = true,
+            CoronaUseIOS6IPadPhotoPickerLandscapeOnlyWorkaround = true,
+            CoronaUseIOS7LandscapeOnlyWorkaround = true,
+            CoronaUseIOS6LandscapeOnlyWorkaround = true,
+
+            UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+			
+			UIAppFonts =
+            {
+                "SNAP.TTF",
+                "OCRAStd.otf",
+                "HoboStd.otf",
+                "ITCKRIST.TTF",
+                "BERNHC.TTF",
+                "RAVIE.TTF",
+                "SHOWG.TTF",
+                "belligerent.ttf",
+                "RUBBERSTAMP.otf",
+                "Candycutes.ttf",
+                "CookieMonster.ttf",
+                "CuteLove.ttf",
+                "DK Cool Crayon.ttf",
+                "ZebraDisco.ttf",
+                "PRISTINA.TTF",
+                "Gabriola.ttf",
+                "VINERITC.TTF",
+                "CHILLER.TTF",
+                "3d.ttf",
+                "EtharnigSc.otf",
+            },
+
+			UIApplicationExitsOnSuspend = True, -- uncomment to quit app on suspend
+
+            CFBundleIconFiles = {
+            "Icon.png",
+            "Icon@2x.png",
+            "Icon-Small-40.png",
+            "Icon-Small-40@2x.png",
+            "Icon-60.png",
+            "Icon-60@2x.png",
+            "Icon-72.png",
+            "Icon-72@2x.png",
+            "Icon-76.png",
+            "Icon-76@2x.png",
+            "Icon-Small-50.png",
+            "Icon-Small-50@2x.png",
+            "Icon-Small.png",
+            "Icon-Small@2x.png"
+            },
+
+            
+		},
+	},
+	
+	
+	-- Android permissions
+
+	androidPermissions = {
+  		"android.permission.INTERNET",
+  		"android.permission.CAMERA",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+  	},
+
+  	android =
+    {
+        usesFeatures =
+        {
+            { name="android.hardware.camera", required=true },
+            
+        }
+    }
+	
+
+ 
+}
